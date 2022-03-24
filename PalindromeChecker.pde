@@ -33,14 +33,5 @@ public boolean palindrome(String word)
       betterWord += Character.toLowerCase(word.charAt(i));
     }
   }
-  return betterWord.equals(reverse(betterWord));
-}
-public String reverse(String str)
-{
-    String sNew = "";
-    for(int i = str.length()-1; i >=0; i --)
-    {
-      sNew += str.charAt(i);
-    }
-    return sNew;
+  return betterWord.equals(Strutil.reverse(betterWord));
 }
